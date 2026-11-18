@@ -25,6 +25,20 @@ npm run lint
 npm run typecheck
 ```
 
+## Integração contínua
+
+O projeto executa as verificações **ESLint** e **TypeScript** automaticamente em pull requests, pushes na branch `main` e pelo acionamento manual do [workflow de qualidade](.github/workflows/quality.yml).
+
+Para reproduzir a checagem localmente:
+
+```bash
+npm ci
+npm run lint
+npm run typecheck
+```
+
+O workflow verifica qualidade estática e compatibilidade de tipos. Não substitui testes de navegação ou execução em dispositivo físico.
+
 ## O que o app faz
 
 | Pedido do enunciado | Onde está |
